@@ -1,4 +1,4 @@
-# RestAssured-BDD-Java
+# Rest Assured-BDD-Cucumber-Java
 # Objective : 
 Developed a simple framework which should support to develop automation test scripts for API services in Java. 
 
