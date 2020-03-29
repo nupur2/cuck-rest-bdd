@@ -21,10 +21,5 @@ Developed a simple framework which should support to develop automation test scr
     - mvn test :- To execute the test scenarios
 
 
-References : 
 
-1. https://github.com/rest-assured/rest-assured/wiki/usage
-2. https://github.com/angiejones/restassured-with-cucumber-demo
-3. https://github.com/swtestacademy/RestAssuredExample
-4. http://www.groupkt.com/post/f2129b88/free-restful-web-services-to-consume-and-test.htm 
-5. http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-automation
+
