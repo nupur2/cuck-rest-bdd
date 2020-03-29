@@ -1,0 +1,2607 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#This feature file contains few test scenarios to verify Rest API services"
+      },
+      {
+        "line": 2,
+        "value": "#Author: Jagan Duraisamy"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 69900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "To verify Rest service - GET Method",
+        "description": "",
+        "id": "to-verify-api-automation-with-rest-assured;to-verify-rest-service---get-method",
+        "after": [
+          {
+            "result": {
+              "duration": 57100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "To initiate Rest service to get country details with code as \"IN\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "Respose status code should be \"200\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "response should includes the following",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "alpha2_code",
+                  "alpha3_code"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "India",
+                  "IN",
+                  "IND"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@API_Test"
+          }
+        ]
+      }
+    ],
+    "name": "To verify API automation with Rest Assured",
+    "description": "",
+    "id": "to-verify-api-automation-with-rest-assured",
+    "keyword": "Feature",
+    "uri": "API_Test_Scenarios.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 77526200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Successful login",
+        "description": "",
+        "id": "login-profile;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 68900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 93500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 12200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 85800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"!23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "!23",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Incorrect credentials. Try again!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Incorrect credentials. Try again!",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 61800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 11900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 83600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"Tset\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Tset",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Incorrect credentials. Try again!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Incorrect credentials. Try again!",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 69100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 12300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"Tset\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Tset",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"!23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "!23",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Incorrect credentials. Try again!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Incorrect credentials. Try again!",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 82900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 18200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 77900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Please enter password.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter password.",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 89500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 28000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 18100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 51800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Please enter username.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter username.",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User navigates to Company home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 89200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see \"Log In as Employee\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In as Employee",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Failed login using wrong credentials",
+        "description": "",
+        "id": "login-profile;failed-login-using-wrong-credentials;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 12600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 67600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in \"Username\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in \"Password\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see \"Please enter your credentials.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter your credentials.",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginProfile"
+          }
+        ]
+      }
+    ],
+    "name": "Login Profile",
+    "description": "As an employee of the company\nI want to login my employee profile using my credentials\nIn order to collaborate with my colleagues",
+    "id": "login-profile",
+    "keyword": "Feature",
+    "uri": "LoginProfile.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginProfile"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 96900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 372900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 73300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Update name",
+        "description": "",
+        "id": "update-profile;update-name",
+        "after": [
+          {
+            "result": {
+              "duration": 12500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on the \"Edit Personal Info\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edit Personal Info",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I fill in \"Your name\" with \"Thilina Ashen Gamage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your name",
+                  "offset": 11
+                },
+                {
+                  "val": "Thilina Ashen Gamage",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 58100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 159700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 13600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"Z-Mob\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Z-Mob",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"3 months\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "3 months",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "QA",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 85700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 12800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"WJ5-Web UI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "WJ5-Web UI",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"1 month\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "1 month",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"UI Testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "UI Testing",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 80100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 416400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 20100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 32800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"Q-Med\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Q-Med",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"5 months\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "5 months",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"UI Testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "UI Testing",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      }
+    ],
+    "name": "Update Profile",
+    "description": "As an employee of the company\nI want to be able to update my name, projects, email, and phone numbers on my profile\nIn order to share my contact information with my colleagues",
+    "id": "update-profile",
+    "keyword": "Feature",
+    "uri": "UpdateProfile.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@UpdateProfile"
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="495" started-at="2020-03-29T19:51:36Z" finished-at="2020-03-29T19:51:36Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@60addb54]" name="feature" class="TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Login and Update Profile Test" duration-ms="495" started-at="2020-03-29T19:51:36Z" finished-at="2020-03-29T19:51:36Z">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@60addb54]" name="setUpClass" is-config="true" duration-ms="195" started-at="2020-03-30T01:21:36Z" finished-at="2020-03-30T01:21:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@60addb54]" name="feature" duration-ms="30" started-at="2020-03-30T01:21:36Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-30T01:21:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[To verify API automation with Rest Assured]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@60addb54]" name="feature" duration-ms="132" started-at="2020-03-30T01:21:36Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-30T01:21:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login Profile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@60addb54]" name="feature" duration-ms="37" started-at="2020-03-30T01:21:36Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-30T01:21:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Update Profile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@60addb54]" name="tearDownClass" is-config="true" duration-ms="23" started-at="2020-03-30T01:21:36Z" finished-at="2020-03-30T01:21:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Login and Update Profile Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
