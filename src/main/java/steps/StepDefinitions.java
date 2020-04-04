@@ -1,14 +1,11 @@
-package stepdefs;
+package steps;
 
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
  
-/**
- * Created by thilinaga on 7/3/2017.
- */
+
 public class StepDefinitions {
     @Given("^I am on the \"([^\"]*)\" page on URL \"([^\"]*)\"$")
     public void i_am_on_the_page_on_URL(String arg1, String arg2) throws Throwable {

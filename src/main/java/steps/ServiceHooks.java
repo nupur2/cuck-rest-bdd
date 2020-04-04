@@ -1,4 +1,4 @@
-package stepdefs;
+package steps;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
